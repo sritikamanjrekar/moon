@@ -1,0 +1,56 @@
+const messages = [
+    "Shubham, you have everything—health, home, love, laughter… and me, your biggest fan 😉",
+    "Guddu, wake up and flex because you are blessed—food, family, and a face too handsome to handle. 😏",
+    "My Moon 🌝, I hope you looked in the mirror today and realized you're the main character of this universe. 🔥",
+    "Shubham, your family, friends, and I? We all think you are a rare gem. Don’t forget that. 💎",
+    "Guddu, your heart is as golden as your smile. Stay grateful for the love around you—especially mine. 😘",
+    "My Moon, today’s reminder: You are important. You are loved. You are ridiculously attractive. ❤️‍🔥",
+    "Shubham, just a casual thought—do you know how lucky the world is to have you? Especially me. 😏",
+    "Guddu, gratitude looks good on you. So does happiness. And, let's be honest, you look good in everything. 🔥",
+    "My Moon, you’ve got a roof over your head, food on your plate, and a person (me) who adores you. 😉",
+    "Shubham, I hope you remember how loved you are—by family, friends… and me, your secret admirer. ❤️‍🔥",
+    "Guddu, today, take a moment to feel rich—not in money, but in health, love, and my attention. 😏",
+    "My Moon, do me a favor? Stand up, stretch, and say, ‘I am awesome.’ Because you are. 😘",
+    "Shubham, if gratitude was a currency, you’d be the richest person alive. Count your blessings and smile! 😊",
+    "Guddu, you have food, a cozy bed, and a heart full of love. Oh, and me, cheering for you daily. 😏",
+    "My Moon, you shine brighter than the stars. Grateful for you today, tomorrow, and forever. 🌟",
+    "Shubham, if I made a gratitude list, you’d be #1. Just saying. 😉",
+    "Guddu, your home is warm, your heart is full, and your charm is undefeated. Keep smiling! 😘",
+    "My Moon, today’s reminder: You are enough. More than enough. Also, too cute for this planet. 😏",
+    "Shubham, self-love looks good on you. Confidence? Even better. Keep shining! ✨",
+    "Guddu, I hope you know that your kindness, your smile, and your presence make this world better. ❤️",
+    "My Moon, you have everything you need, and the universe is lucky to have YOU. Stay grateful. 😊",
+    "Shubham, no matter what, remember this: You are important to many, but to me? You’re extra special. 😉",
+    "Guddu, be thankful for today, because it’s another chance to be the absolute legend you are. 🔥",
+    "My Moon, take a deep breath and smile—because life is sweet, and so are you. 😏",
+    "Shubham, today is your day to appreciate how far you’ve come. Also, quick question: How do you stay this attractive? 😉",
+    "Guddu, I know a secret… Want to hear? You are the kind of person people dream of having in their life. 😘",
+    "My Moon, let’s be honest—if gratitude was a game, you’d be winning. Keep that heart full. ❤️",
+    "Shubham, today’s challenge: List 3 things you’re grateful for. If ‘me’ isn’t on the list, we need to talk. 😏",
+    "Guddu, don’t let a single worry steal your joy. You have so much love and light in your life. And me. 😉",
+    "My Moon, today’s mission: Be grateful, be confident, and, most importantly, be your adorable self. 😊",
+    "Shubham, every single day, I’m grateful for your existence. The world shines brighter because of you. 🌟",
+    "Guddu, breathe in gratitude, breathe out stress. And maybe send me a cute smile while you're at it. 😉",
+    "My Moon, don’t forget to love yourself a little extra today. You deserve it, handsome. 😘",
+    "Shubham, let’s make today amazing—because you, my dear, deserve nothing less. ❤️‍🔥",
+    "Guddu, close your eyes and say, ‘I am lucky. I am loved. I am amazing.’ Because you truly are. 😏",
+    "My Moon, quick reminder: Life is better with a grateful heart… and that cute face of yours. 😉"
+];
+
+function showMessage() {
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+    document.getElementById("dailyMessage").innerText = messages[dayOfYear % messages.length];
+}
+
+showMessage();
+
+function displayDateTime() {
+    var today = new Date();
+    var date = today.toDateString();
+    var time = today.toLocaleTimeString();
+    document.getElementById("datetime").innerHTML = date + ' ' + time;
+}
+
+
+displayDateTime();
